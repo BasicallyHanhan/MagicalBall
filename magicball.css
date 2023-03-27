@@ -1,0 +1,104 @@
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+span {
+    color: red;
+    font-size: 4rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 1px 1px 2px pink, 0 0 1em pink, 0 0 0.2em hotpink;
+    font-style: italic;
+}
+
+h2 {
+  text-align: center;
+  color: red;
+  font-style: italic;
+  letter-spacing: 0.1em;
+}
+
+
+#eightBall {
+
+    width: 750px;
+    height: 600px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#ourButton {
+    margin-left: 540px;
+    font-size: 1rem;
+    text-decoration: none;
+    border: 3px solid;
+    
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    height: 50px;
+    width: 350px;
+    color: black;
+
+    letter-spacing: 2px;
+    cursor: pointer;
+
+    overflow: hidden;
+}
+
+#ourButton:hover {
+
+    color: white;
+    background-color: black;
+    box-shadow: 1px 1px 0px 0px rgb(94, 92, 92), 2px 2px 0px 0px rgb(94, 92, 92), 3px 3px 0px 0px rgb(94, 92, 92), 4px 4px 0px 0px rgb(94, 92, 92), 5px 5px 0px 0px rgb(94, 92, 92);
+
+}
+
+
+#ourButton:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+} 
+
+.animation {
+    animation: shake 1.5s;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0) }
+    10% { transform: translateX(20px) }
+    20% { transform: translateX(-20px) }
+    30% { transform: translateX(20px) }
+    40% { transform: translateX(-20px) }
+    50% { transform: translateX(20px) }
+    60% { transform: translateX(-20px) }
+    70% { transform: translateX(20px) }
+    80% { transform: translateX(-20px) }
+    90% { transform: translateX(20px) }
+    100% { transform: translateX(-20px) }
+  }
+
+  .yourResult {
+    font-size: 3em;
+    position: relative;
+    left: 650px;
+    top: 360px;
+    font-family: 'Rubik Spray Paint', cursive;
+    z-index: 8;
+    color: rgb(163, 26, 212);
+    text-shadow: 0 0 8px black, 0 0 8px black, 0 0 8px black, 0 0 8px black;
+    letter-spacing: 1.5px;
+    width: 40px;
+
+    opacity: 0;
+  
+    animation: fade 5s;
+    animation-delay: 1s;
+  }
+
+  @keyframes fade {
+
+    0% {opacity: 0; }
+    100% {opacity: 1;}
+    
+  }
